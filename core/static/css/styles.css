@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    /* background-color: #E35205; */
+    color: white;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0 0 0;
+}
+.logo {
+    display: inline-block;
+    color: white;
+    margin: auto;
+}
+.logo img{
+    width: 250px;
+    max-height: 150px;
+}
+nav {
+    display: inline-block;
+    /* float: right; */
+    margin: auto 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #005bb5;
+}
+
+.banner {
+    background-color: none;
+    color: white;
+    padding: 50px 0 10px 0;
+    text-align: center;
+}
+
+.banner img{
+    max-width: 1102px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+main {
+    padding: 20px 0;
+}
+
+section {
+    margin: 20px auto;
+    border-radius: 8px;
+    padding: 30px 40px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1102px;
+    width: 90%;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+#sobre h2{
+    font-weight: bolder;
+}
+#sobre p{
+    line-height: 10pt;
+}
+#programacao h2{
+    font-weight: bolder;
+    font-size: 22pt;
+    text-align: center;
+}
+#inscricao h2{
+    font-weight: bolder;
+    font-size: 22pt;
+    text-align: center;
+}
+footer {
+    background-color: #f4f4f4;
+    color: rgb(68, 66, 68);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.text-justify {
+    text-align: justify;
+}   
+
+.btn-success{
+    background-color: 00b599 !important;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.border{
+    border: 2px solid #00b599;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
