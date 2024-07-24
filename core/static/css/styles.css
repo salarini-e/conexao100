@@ -14,7 +14,7 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 0 0 0;
+    padding: 40px 40px 0 40px;
 }
 .logo {
     display: inline-block;
@@ -73,13 +73,20 @@ main {
 section {
     margin: 20px auto;
     border-radius: 8px;
-    padding: 30px 40px;
+    padding: 30px 0px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* max-width: 1102px; */
+    width: 100%;
+}
+
+#banner {
+    border-radius: 0px !important;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
     max-width: 1102px;
     width: 90%;
 }
-
 section h2 {
     margin-top: 0;
 }
@@ -90,10 +97,44 @@ section h2 {
 #sobre p{
     line-height: 10pt;
 }
-#programacao h2{
+
+.desktop h2{
+    margin-top: 18px;
     font-weight: bolder;
-    font-size: 22pt;
+    font-size: 23pt;
     text-align: center;
+    color: white;
+}
+.desktop p{
+    font-size: 16pt;
+    margin: 30px 40px;
+    color: rgb(226, 226, 226);
+}
+.desktop ul li{
+    font-size: 16pt;
+    color: rgb(226, 226, 226);
+}
+.mobile h2{
+    margin-top: 10px;
+    font-weight: bolder;
+    font-size: 3.0vh;
+    text-align: center;
+    color: white;
+}
+.mobile p{
+    font-size: 1.9vh;
+    color: rgb(226, 226, 226);
+}
+.desktop p span{
+    background-color: #005bb5;
+    padding: 3px 6px;
+    color: white;
+    border-radius: 4px;
+}
+.mobile p span{
+    background-color: #005bb5;
+    padding: 1px 3px;
+    color: white;
 }
 #inscricao h2{
     font-weight: bolder;
@@ -126,4 +167,24 @@ footer {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s;
+}
+
+.div-img{
+    padding: 0px;
+}
+
+.mobile{
+    display: none;
+}
+.desktop{
+    display: block;
+}
+
+@media (max-width: 1268px) {
+    .mobile{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }  
 }
